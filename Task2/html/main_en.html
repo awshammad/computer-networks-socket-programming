@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ENCS3320-Webserver</title>
+    <!-- Link to external stylesheet -->
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <!-- Language Switcher Button -->
+    <div class="lang-switch-container">
+        <a href="main_ar.html" class="lang-btn" title="Switch to Arabic">
+            <img src="../imgs/sa.jpeg" alt="Arabic" class="flag-icon">
+        </a>
+    </div>
+
+    <!-- Page Header -->
+    <header>
+        <h1>Welcome to ENCS3320 - Computer Networks Webserver</h1>
+    </header>
+
+    <!-- Team Members Section -->
+    <section class="team">
+        <h2>The Team</h2>
+        <div class="team-grid">
+            <!-- Member 1: Amir -->
+            <div class="member-card">
+                <img src="../imgs/Amir.jpeg" alt="Amir Al-Rashaydah">
+                <h3>Amir Al-Rashaydah</h3>
+                <p><strong>ID:</strong> 1222596</p>
+                <ul>
+                    <li><strong>Skills:</strong> Python, C, Computer Architecture, Dynamic Programming</li>
+                    <li><strong>Projects:</strong> Medical test management system, Palestinian-District-Data-Management</li>
+                    <li><strong>Hobbies:</strong> Gaming, Coding</li>
+                </ul>
+            </div>
+
+            <!-- Member 2: Aws -->
+            <div class="member-card">
+                <img src="../imgs/Aws.jpeg" alt="Aws Hammad">
+                <h3>Aws Hammad</h3>
+                <p><strong>ID:</strong> 1221697</p>
+                <ul>
+                    <li><strong>Skills:</strong> Python, Networking, AI/ML, Computer Architecture</li>
+                    <li><strong>Projects:</strong> SmartDrop GUI, Socket Web Server, Bin Packing Problem Solution</li>
+                    <li><strong>Hobbies:</strong> Coding, Reading</li>
+                </ul>
+            </div>
+
+            <!-- Member 3: Ibraheem -->
+            <div class="member-card">
+                <img src="../imgs/Ibraheem.jpeg" alt="Ibraheem Sleet">
+                <h3>Ibraheem Sleet</h3>
+                <p><strong>ID:</strong> 1220200</p>
+                <ul>
+                    <li><strong>Skills:</strong> Python, HTML/CSS</li>
+                    <li><strong>Projects:</strong> OS Project</li>
+                    <li><strong>Hobbies:</strong> Learning, Coding</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Network Security Section -->
+    <section class="topic">
+        <h2 style="color:#003366;">🛡️ Network Security</h2>
+
+        <p>
+            <strong>The Internet</strong> was <em>not originally designed</em> with strong security in mind. 
+            The early vision was a transparent and open environment for trusted users. 
+            As usage evolved, <span style="color:red;"><strong>security became critical</strong></span> across all layers of network communication.
+        </p>
+
+        <!-- Network Security Image -->
+        <img src="../imgs/network.jpeg" alt="Network Security Concept" class="topic-image">
+
+        <!-- Network Threats Section -->
+        <h3 style="color:#003366;">⚠️ Common Network Threats</h3>
+        <ul>
+            <li><strong>Malware:</strong> Software that harms or steals information. Includes:
+                <ul>
+                    <li><em>Viruses</em> – require user action to activate.</li>
+                    <li><em>Worms</em> – spread automatically across systems.</li>
+                    <li><em>Spyware</em> – records user activity without consent.</li>
+                </ul>
+            </li>
+            <li><strong>Botnets:</strong> Infected devices controlled remotely to perform attacks.</li>
+            <li><strong>Packet Sniffing:</strong> Capturing data sent across unsecured networks.</li>
+            <li><strong>IP Spoofing:</strong> Faking the source IP to impersonate another device.</li>
+        </ul>
+
+        <!-- Security Design Goals -->
+        <h3 style="color:#003366;">🎯 Security Design Goals</h3>
+        <ol>
+            <li><strong>Confidentiality</strong> – Prevent unauthorized access to sensitive data.</li>
+            <li><strong>Integrity</strong> – Ensure information is not altered during transmission.</li>
+            <li><strong>Availability</strong> – Keep systems operational even under attack.</li>
+            <li><strong>Authentication</strong> – Verify the identity of communicating parties.</li>
+        </ol>
+
+        <p>
+            Tools like <strong>Wireshark</strong> can help analyze traffic and detect suspicious activity.
+            As networks grow, <em>every protocol must now include security considerations by design</em>.
+        </p>
+    </section>
+
+    <!-- Footer Links -->
+    <footer>
+        <p>
+            🔗 <a href="https://gaia.cs.umass.edu/kurose_ross/index.php" target="_blank">Textbook Website</a> |
+            <a href="https://www.birzeit.edu/" target="_blank">Birzeit University</a> |
+            <a href="mySite_1221697_en.html">Local Site Page</a>
+        </p>
+    </footer>
+
+    <!-- JavaScript for Language Switcher Visibility on Scroll -->
+    <script>
+        const langSwitcher = document.querySelector('.lang-switch-container');
+
+        // Hide language switcher when scrolling down
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                langSwitcher.style.opacity = '0';
+                langSwitcher.style.pointerEvents = 'none'; // Disable click interaction
+            } else {
+                langSwitcher.style.opacity = '1';
+                langSwitcher.style.pointerEvents = 'auto'; // Re-enable click interaction
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl"> <!-- Right-to-left document direction -->
+<head>
+    <meta charset="UTF-8">
+    <title>طلب ملف وسائط</title>
+    
+    <!-- Link to the external stylesheet -->
+    <link rel="stylesheet" href="../css/style.css">
+
+    <!-- Inline CSS styling for form appearance -->
+    <style>
+        /* Form container styling */
+        .form-container {
+            max-width: 600px;
+            margin: 40px auto;
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+            text-align: right; /* Align text to the right for RTL languages */
+        }
+
+        /* Form title styling */
+        .form-container h2 {
+            color: #003366;
+            margin-bottom: 20px;
+        }
+
+        /* Label styling */
+        label {
+            font-weight: bold;
+        }
+
+        /* Input field styling */
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin-top: 8px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+        }
+
+        /* Submit button styling */
+        input[type="submit"] {
+            background-color: #003366;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        /* Submit button hover effect */
+        input[type="submit"]:hover {
+            background-color: #005599;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Main Form Section -->
+    <div class="form-container">
+        <h2>طلب صورة أو فيديو متعلق بالشبكات</h2>
+        <!-- Form that sends a GET request to the server at /handle -->
+        <form action="/handle" method="get">
+            <!-- Label for the filename input field -->
+            <label for="filename">أدخل اسم الملف (مع الامتداد):</label>
+            <!-- Text input for entering the filename -->
+            <input type="text" id="filename" name="filename" placeholder="مثال: router.png أو video.mp4" required>
+            <!-- Submit button to send the form -->
+            <input type="submit" value="إرسال الطلب">
+        </form>
+    </div>
+
+</body>
+</html>

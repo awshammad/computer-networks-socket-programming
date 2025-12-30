@@ -1,0 +1,196 @@
+/*Global Styles (LTR by default)*/
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f9f9f9;
+    color: #222;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh; /* Ensure gradient covers full viewport height */
+}
+
+/*Header Styling*/
+header {
+    background: linear-gradient(135deg, #e6f3ff 0%, #cce6ff 100%); /* Subtle blue gradient */
+    padding: 20px;
+    color: #003366; /* Darker blue text for contrast */
+    text-align: center;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Header Title Styling */
+header h1 {
+    color: #0055aa;
+    margin: 0;
+    font-size: 2.2em;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+/*Team Section Layout*/
+.team {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+/* Team Section Title Styling */
+.team h2 {
+    color: #003366;
+    margin-bottom: 20px;
+}
+
+/* Grid Layout for Team Members */
+.team-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+/*Team Member Card Styling*/
+.member-card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    text-align: center;
+}
+
+/* Member Profile Image Styling */
+.member-card img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    border: 3px solid #003366;
+}
+
+/* Member Name Styling */
+.member-card h3 {
+    margin: 10px 0 5px;
+    color: #003366;
+}
+
+/* List of Skills, Projects, Hobbies */
+.member-card ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: left; /* Left align for LTR */
+}
+
+/*Topic Section Styling*/
+.topic {
+    background-color: #eef4fb;
+    padding: 40px 20px;
+    text-align: left;
+    max-width: 800px;
+    margin: 40px auto;
+    border-radius: 12px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05); 
+}
+
+/* Topic Title Styling */
+.topic h2 {
+    color: #003366;
+}
+
+/* Topic Image Styling */
+.topic-image {
+    max-width: 100%;
+    display: block;
+    margin: 20px auto;
+    border-radius: 8px;
+}
+
+/*Footer Styling*/
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #003366;
+    color: white;
+    font-size: 15px;
+}
+
+/* Footer Links Styling */
+footer a {
+    color: #00c6ff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+/* Footer Links Hover Effect */
+footer a:hover {
+    text-decoration: underline;
+}
+
+/*Language Switch Button Styling*/
+.lang-switch-container {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 999;
+    transition: opacity 0.1s ease;
+}
+
+/* Rounded Button with Gradient Background */
+.lang-btn {
+    display: inline-block;
+    background: linear-gradient(to left, #003366, #005599);
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+    transition: transform 0.3s ease, background 0.3s ease;
+    padding: 0;
+    overflow: hidden;
+    text-align: center;
+    line-height: 45px;
+}
+
+/* Button Hover Effect */
+.lang-btn:hover {
+    transform: scale(1.1);
+    background: linear-gradient(to left, #005599, #0077cc);
+}
+
+/* Make Flag Icon Cover Button Fully */
+.flag-icon {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/*RTL Support (Overrides When dir="rtl" is Set)*/
+
+/* Right-to-left direction for body */
+body[dir="rtl"] {
+    direction: rtl;
+    text-align: right;
+}
+
+/* Right-align headings and paragraphs in RTL */
+body[dir="rtl"] h1,
+body[dir="rtl"] h2,
+body[dir="rtl"] h3,
+body[dir="rtl"] h4,
+body[dir="rtl"] p {
+    direction: rtl;
+    text-align: right;
+    unicode-bidi: plaintext;
+}
+
+/* Lists in RTL: start bullets/numbers inside */
+body[dir="rtl"] ul,
+body[dir="rtl"] ol {
+    list-style-position: inside;
+    padding-right: 0;
+    margin-right: 0;
+}
+
+/* List items aligned to the right in RTL */
+body[dir="rtl"] li {
+    direction: rtl;
+    text-align: right;
+    unicode-bidi: plaintext;
+}

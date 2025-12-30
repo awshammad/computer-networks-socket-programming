@@ -1,0 +1,203 @@
+/*Basic Page Setup*/
+body {
+    direction: rtl; /* Right-to-left direction for Arabic layout */
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    background-color: #f9f9f9;
+    color: #222;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh; /* Ensure gradient covers full viewport height */
+}
+
+/*Header Styling*/
+header {
+    background: linear-gradient(135deg, #e6f3ff 0%, #cce6ff 100%); /* Subtle blue gradient */
+    padding: 20px;
+    color: #003366; /* Darker blue text for contrast */
+    text-align: center;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Header Title Styling */
+header h1 {
+    color: #0055aa;
+    margin: 0;
+    font-size: 2.2em;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+/*Centered Main Title*/
+h1 {
+    text-align: center;
+}
+
+/* Center the team section title */
+.team h2 {
+    text-align: center;
+}
+
+/* Align section and subsection titles to the right with some margin */
+h2, h3 {
+    text-align: right;
+    margin-right: 40px;
+}
+
+/* Align all paragraphs and lists to the right */
+p, ul, ol {
+    direction: rtl;
+    text-align: right;
+    unicode-bidi: plaintext; /* Preserve natural character order */
+    margin: 0 40px;
+}
+
+/* List style adjustments */
+ul, ol {
+    list-style-position: inside;
+    padding: 0;
+}
+
+/*Topic Image Styling*/
+.topic-image {
+    display: block;
+    margin: 20px auto; /* Center image */
+    max-width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/*Footer Styling*/
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #003366;
+    color: white;
+    font-size: 15px;
+}
+
+/* Footer links styling */
+footer a {
+    color: #00c6ff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+/* Footer link hover effect */
+footer a:hover {
+    text-decoration: underline;
+}
+
+/*Language Switch Button Styling*/
+.lang-switch-container {
+    position: fixed;
+    top: 20px;
+    left: 20px; /* Positioned on the left for RTL */
+    z-index: 999;
+    transition: opacity 0.1s ease;
+}
+
+/* Round button with gradient background */
+.lang-btn {
+    display: inline-block;
+    background: linear-gradient(to left, #003366, #005599);
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+    transition: transform 0.3s ease, background 0.3s ease;
+    padding: 0;
+    overflow: hidden;
+    text-align: center;
+    line-height: 45px;
+}
+
+/* Button hover effect */
+.lang-btn:hover {
+    transform: scale(1.1);
+    background: linear-gradient(to left, #005599, #0077cc);
+}
+
+/* Flag icon fits button completely */
+.flag-icon {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/*Member Card Styling*/
+.member-card {
+    direction: rtl;
+    text-align: right;
+}
+
+/* Member name styling */
+.member-card h3 {
+    text-align: center;
+    margin-top: 18px; 
+    margin-bottom: 5px;
+    font-size: 18px;
+    color: #003366;
+}
+
+/* Member profile image styling */
+.member-card img {
+    display: block;
+    margin: 0 auto 15px auto;
+    border-radius: 50%;
+    border: 3px solid #003366;
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+}
+
+/* Info row layout */
+.info-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    direction: rtl;
+    margin: 6px 20px;
+    font-size: 16px;
+    color: #222;
+    gap: 5px; /* Space between label and value */
+}
+
+/* Label text styling */
+.label {
+    font-weight: bold;
+    color: #1a1a1a;
+    white-space: nowrap;
+}
+
+/* Value text styling */
+.value {
+    flex: 1;
+    color: #222;
+}
+
+/* Centered number information */
+.info-number {
+    text-align: center;
+    font-weight: normal;
+    color: #000;
+    margin-top: -10px;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+/* Centered ID information */
+.info-id {
+    text-align: center;
+    direction: rtl;
+    font-weight: normal;
+    color: #000;
+    margin: 16px 20px 16px 20px;
+    font-size: 15px;
+}
+
+/* Label consistency for both ID and other info rows */
+.info-id .label,
+.info-row .label {
+    font-weight: bold;
+    color: #1a1a1a; /* Dark black */
+}

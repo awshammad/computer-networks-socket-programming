@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>خادم ENCS3320</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/rtl.css">
+    <style>
+        
+        body {
+            direction: rtl;
+            text-align: right;
+        }
+        .lang-switch-container {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            z-index: 999;
+        }
+        .lang-btn {
+            display: inline-block;
+            background: linear-gradient(to left, #003366, #005599);
+            color: white;
+            text-decoration: none;
+            font-size: 22px;
+            border-radius: 50%;
+            width: 45px;
+            height: 45px;
+            line-height: 45px;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+            transition: transform 0.3s ease, background 0.3s ease;
+        }
+        .lang-btn:hover {
+            transform: scale(1.1);
+            background: linear-gradient(to left, #005599, #0077cc);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="lang-switch-container">
+        <a href="main_en.html" class="lang-btn" title="Switch to English">
+            <img src="../imgs/en.jpeg" alt="English" class="flag-icon">
+          </a>
+    </div>
+
+    <header>
+        <h1>مرحبًا بكم في ENCS3320 - شبكات الحاسوب</h1>
+    </header>
+
+    <section class="team">
+        <h2>فريق العمل</h2>
+        <div class="team-grid">
+            
+            <div class="member-card">
+                <img src="../imgs/Amir.jpeg" alt="أمير الرشايدة">
+                <h3>أمير الرشايدة</h3>
+                <div class="info-id"><span class="label">الرقم:</span> 1222596</div>
+                <div class="info-row"><span class="label">المهارات:</span><span class="value">بايثون، لغة C، بنية الحاسوب، البرمجة الديناميكية</span></div>
+                <div class="info-row"><span class="label">المشاريع:</span><span class="value">نظام إدارة الفحوصات الطبية، إدارة بيانات مناطق فلسطين</span></div>
+                <div class="info-row"><span class="label">الهوايات:</span><span class="value">الألعاب، البرمجة</span></div>
+            </div>
+            <div class="member-card">
+                <img src="../imgs/Aws.jpeg" alt="أوس حماد">
+                <h3>أوس حماد</h3>
+                <div class="info-id"><span class="label">الرقم:</span> 1221697</div>
+                <div class="info-row"><span class="label">المهارات:</span><span class="value">بايثون، الذكاء الاصطناعي وتعلم الآلة، بنية الحاسوب</span></div>
+                <div class="info-row"><span class="label">المشاريع:</span><span class="value">توصيل الصناديق، ويب سيرفر باستخدام Socket، حل مشكلة تعبئة الحاويات</span></div>
+                <div class="info-row"><span class="label">الهوايات:</span><span class="value">البرمجة، القراءة</span></div>
+            </div>
+            <div class="member-card">
+                <img src="../imgs/Ibraheem.jpeg" alt="إبراهيم سليط">
+                <h3>إبراهيم سليط</h3>
+                <div class="info-id"><span class="label">الرقم:</span> 1220200</div>
+                <div class="info-row"><span class="label">المهارات:</span><span class="value">بايثون، HTML/CSS</span></div>
+                <div class="info-row"><span class="label">المشاريع:</span><span class="value">مشروع أنظمة التشغيل</span></div>
+                <div class="info-row"><span class="label">الهوايات:</span><span class="value">التعلم، البرمجة</span></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="topic">
+        <h2 style="color:#003366;">🛡️ أمن الشبكات</h2>
+
+        <p>
+            <strong>الإنترنت</strong> لم يُصمم في بداياته مع <em>اهتمام كبير بالأمان</em>، إذ كان يُفترض أن يكون بين مستخدمين موثوقين في بيئة شفافة. ومع تطور استخدام الإنترنت، أصبحت <span style="color:red;"><strong>قضايا الأمان أمرًا أساسيًا</strong></span> يجب مراعاتها في جميع طبقات الشبكة.
+        </p>
+
+        <img src="../imgs/network.jpeg" alt="مفهوم أمن الشبكات" class="topic-image">
+
+        <h3 style="color:#003366;">⚠️ أبرز التهديدات الأمنية</h3>
+        <ul>
+            <li><strong>البرمجيات الخبيثة:</strong> برامج ضارة تهدف إلى إتلاف أو سرقة البيانات، وتشمل:
+                <ul>
+                    <li><em>الفيروسات</em> – تحتاج لتفاعل المستخدم لكي تنتشر.</li>
+                    <li><em>الديدان</em> – تنتشر تلقائيًا دون تدخل.</li>
+                    <li><em>برمجيات التجسس</em> – تقوم بتسجيل نشاط المستخدم خلسة.</li>
+                </ul>
+            </li>
+            <li><strong>شبكات الروبوت (Botnets):</strong> أجهزة مخترقة تُستخدم لشن هجمات أو إرسال رسائل مزعجة.</li>
+            <li><strong>التنصت على الحزم:</strong> اعتراض البيانات المرسلة على الشبكة وتحليلها.</li>
+            <li><strong>انتحال العناوين:</strong> إرسال رزم بيانات بعنوان مصدر مزيف.</li>
+        </ul>
+
+        <h3 style="color:#003366;">🎯 أهداف الأمان</h3>
+        <ol>
+            <li><strong>السرية:</strong> منع الوصول غير المصرح به للمعلومات.</li>
+            <li><strong>السلامة:</strong> ضمان عدم التلاعب أو التعديل في البيانات.</li>
+            <li><strong>التوافر:</strong> الحفاظ على الخدمات متاحة حتى أثناء الهجمات.</li>
+            <li><strong>التحقق من الهوية:</strong> التأكد من هوية الأطراف المتواصلة.</li>
+        </ol>
+
+        <p>
+            تُستخدم أدوات مثل <strong>Wireshark</strong> لتحليل حركة الشبكة وكشف أي نشاط مشبوه. اليوم، يجب أن تتضمن كل بروتوكولات الشبكات <em>اعتبارات أمنية من البداية</em>.
+        </p>
+    </section>
+
+    <footer>
+        <div class="footer-center">
+          🔗 <a href="https://gaia.cs.umass.edu/kurose_ross/index.php" target="_blank">موقع الكتاب</a> |
+          <a href="https://www.birzeit.edu/" target="_blank">جامعة بيرزيت</a> |
+          <a href="mySite_1221697_ar.html">الصفحة المحلية</a>
+        </div>
+      </footer>
+      <script>
+        const langSwitcher = document.querySelector('.lang-switch-container');
+      
+        window.addEventListener('scroll', () => {
+          if (window.scrollY > 50) {
+            langSwitcher.style.opacity = '0';
+            langSwitcher.style.pointerEvents = 'none';
+          } else {
+            langSwitcher.style.opacity = '1';
+            langSwitcher.style.pointerEvents = 'auto';
+          }
+        });
+      </script>
+
+</body>
+</html>
